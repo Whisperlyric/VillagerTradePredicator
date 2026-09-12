@@ -61,8 +61,14 @@ public final class RoundIterator implements Iterator<RoundIterator.Round> {
 
     public record Round(int offset, List<PredictedOffer> offers) {
 
+        /** Order-insensitive identity (legacy matching basis). */
         public List<OfferFingerprint> fingerprints() {
             return OfferFingerprint.ofRound(offers);
+        }
+
+        /** Screen-order identity — the player can read this order off the trade UI directly. */
+        public List<OfferFingerprint> orderedFingerprints() {
+            return offers.stream().map(OfferFingerprint::of).toList();
         }
 
         public boolean isEmpty() {

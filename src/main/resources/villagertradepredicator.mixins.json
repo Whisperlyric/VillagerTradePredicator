@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.villagertradepredicator.mixin.client",
+  "compatibilityLevel": "JAVA_22",
+  "mixins": [],
+  "client": [
+    "ConnectionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

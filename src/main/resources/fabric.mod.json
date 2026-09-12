@@ -5,6 +5,9 @@
   "name": "Villager Trade Predicator",
   "description": "Client-side villager trade prediction, preview and reroll automation. Reads vanilla trade data, changes no server behavior.",
   "environment": "client",
+  "mixins": [
+    "villagertradepredicator.mixins.json"
+  ],
   "entrypoints": {
     "client": [
       "com.villagertradepredicator.VillagerTradePredicator"
