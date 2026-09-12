@@ -1,0 +1,107 @@
+// Per-version build script shared by all version subprojects.
+
+// MC 26.x ships unobfuscated; loom splits into fabric-loom (no-remap) vs fabric-loom-remap
+apply plugin: ((project.name.split('\\.')[0] as int) >= 26) ? 'net.fabricmc.fabric-loom' : 'net.fabricmc.fabric-loom-remap'
+apply plugin: 'com.replaymod.preprocess'
+
+// mcVersion is injected by the preprocess plugin from the root version graph
+final int mcVersion = project.mcVersion as int
+final boolean unobfuscated = mcVersion >= 26_00_00
+
+// Java tier: 26.x -> 25
+final int JAVA_VERSION = mcVersion >= 26_00_00 ? 25 : 21
+final JavaVersion JAVA_COMPATIBILITY = JavaVersion.valueOf("VERSION_" + JAVA_VERSION)
+
+// Gradle 9 shim: the preprocessor resolves its own 'preprocess-mojangMappings'
+// dependencyScope directly (hard error on Gradle 9). Re-point the merge task at a
+// legal resolvable view. Only exists on obfuscated versions adjacent to 26.x.
+def mojangScope = configurations.findByName('preprocess-mojangMappings')
+if (mojangScope != null) {
+    def mojangResolver = configurations.resolvable('preprocess-mojangMappings-resolver') {
+        extendsFrom(mojangScope)
+    }
+    afterEvaluate {
+        if ('mergeDestinationNamedAndMojangMappings' in tasks.names) {
+            tasks.named('mergeDestinationNamedAndMojangMappings').configure {
+                mojangMappings.fileProvider(mojangResolver.flatMap { it.elements }.map { it.iterator().next().asFile })
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    if (!unobfuscated) {
+        mappings loom.officialMojangMappings()
+    }
+    if (unobfuscated) {
+        implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+        implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    } else {
+        modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+        modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    }
+
+    testImplementation platform('org.junit:junit-bom:5.10.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    sourceCompatibility = JAVA_COMPATIBILITY
+    targetCompatibility = JAVA_COMPATIBILITY
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(JAVA_VERSION)
+    }
+}
+
+sourceSets.main.resources {
+    srcDir "src/main/resources"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    archiveBaseName = project.mod_id
+    archiveVersion = "fabric${project.name}-${project.mod_version}"
+    archiveClassifier = ""
+}
+
+if (!unobfuscated) {
+    remapJar {
+        archiveBaseName = project.mod_id
+        archiveVersion = "fabric${project.name}-${project.mod_version}"
+        archiveClassifier = ""
+    }
+}
+
+afterEvaluate {
+    def mainProjectName = rootProject.file('versions/mainProject').text.trim()
+    if (project.name != mainProjectName) {
+        tasks.matching { it.name == 'preprocessCode' }.configureEach {
+            def mainCompile = rootProject.project(":${mainProjectName}").tasks.named('compileJava')
+            dependsOn(mainCompile)
+        }
+    }
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    inputs.property "version", project.mod_version
+    inputs.property "minecraft_range", project.minecraft_range
+    inputs.property "java_version", JAVA_VERSION
+    inputs.property "loader_version", project.loader_version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.mod_version,
+               "minecraft_range": project.minecraft_range,
+               "java_version": JAVA_VERSION,
+               "loader_version": project.loader_version
+    }
+}

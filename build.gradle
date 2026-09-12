@@ -1,0 +1,57 @@
+// Multi-version preprocessor root build script.
+// Workflow reference: AccountSwitcher / Slideshow-Pro (ReplayMod preprocessor).
+
+plugins {
+	id 'fabric-loom' version '1.17.20' apply false
+	id 'net.fabricmc.fabric-loom-remap' version '1.17.20' apply false
+
+	// Upstream ReplayMod preprocessor (supports extra-mappings files via link()).
+	id 'com.replaymod.preprocess-root' version '221276c7d4'
+	id 'com.replaymod.preprocess' version '221276c7d4' apply false
+}
+
+preprocess {
+	// Fail the build when a mapping-file entry matches nothing (catches typos).
+	strictExtraMappings = true
+
+	// The main (core) project is read from versions/mainProject (26.2) by the plugin itself.
+
+	// mappings arg: non-null = obfuscated (joined via intermediary/mojmap),
+	// null = unobfuscated (26.x ships official names; links join by shared mojang names).
+	def mc260102 = createNode('26.1.2', 26_01_02, null)
+	def mc26200  = createNode('26.2', 26_02_00, null)
+
+	// Core = newest node: shared source is written in 26.2 API. Pure renames between
+	// 26.1.2 and 26.2 go into versions/mapping-26.2-26.1.2.txt (left column = 26.2 name)
+	// once the client layer needs them; the prediction core is version-agnostic.
+	mc26200.link(mc260102, null)
+}
+
+tasks.register('buildAndGather') {
+	subprojects {
+		dependsOn project.tasks.named('build').get()
+	}
+	doFirst {
+		println 'Gathering builds'
+		def buildLibs = {
+			p -> p.buildDir.toPath().resolve('libs')
+		}
+		delete fileTree(buildLibs(rootProject)) {
+			include '*'
+		}
+		subprojects {
+			copy {
+				from(buildLibs(project)) {
+					include '*.jar'
+					exclude '*-dev.jar', '*-sources.jar', '*-shadow.jar'
+				}
+				into buildLibs(rootProject)
+				duplicatesStrategy = DuplicatesStrategy.INCLUDE
+			}
+		}
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	options.compilerArgs << '-Xlint:-processing'
+}

@@ -1,0 +1,49 @@
+import groovy.json.JsonSlurper
+
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		maven {
+			name = 'Jitpack'
+			url = 'https://jitpack.io'
+		}
+		maven {
+			name = 'Aliyun'
+			url = 'https://maven.aliyun.com/repository/public'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+	resolutionStrategy {
+		eachPlugin {
+			switch (requested.id.id) {
+				case "com.replaymod.preprocess":
+				case "com.replaymod.preprocess-root": {
+					// Upstream ReplayMod preprocessor (NOT the Fallen-Breath fork,
+					// which silently ignores link() extra-mapping files).
+					useModule("com.github.replaymod:preprocessor:${requested.version}")
+					break
+				}
+			}
+		}
+	}
+}
+
+plugins {
+	id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+// Include all version subprojects from settings.json
+def settings = new JsonSlurper().parseText(file('settings.json').text)
+for (String version : settings.versions) {
+	include(":$version")
+
+	def proj = project(":$version")
+	proj.projectDir = file("versions/$version")
+	proj.buildFileName = "../../common.gradle"
+}
+
+rootProject.name = "villagertradepredicator"
