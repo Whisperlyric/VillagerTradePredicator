@@ -10,7 +10,7 @@ import com.villagertradepredicator.core.model.TradeSetDef;
 import com.villagertradepredicator.core.rng.SequenceConfig;
 import com.villagertradepredicator.core.rng.TradeSequences;
 import com.villagertradepredicator.core.sim.SimContext;
-import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
+import com.villagertradepredicator.core.rng.XoroshiroStream;
 
 /**
  * Recovers "which round of the shared sequence is this villager consuming" (the offset)
@@ -32,7 +32,7 @@ public final class OffsetLocator {
             return List.of();
         }
         int window = observedRounds.size();
-        XoroshiroRandomSource rng = TradeSequences.create(worldSeed, cfg, set.randomSequence());
+        XoroshiroStream rng = TradeSequences.create(worldSeed, cfg, set.randomSequence());
         RoundIterator iterator = new RoundIterator(set, rng, ctx);
 
         Deque<List<OfferFingerprint>> history = new ArrayDeque<>(window);

@@ -15,10 +15,10 @@ import net.minecraft.resources.Identifier;
  */
 public record OfferFingerprint(Identifier resultItem, int costA,
         Optional<PredictedOffer.SecondCost> costB,
-        Optional<PredictedOffer.StoredEnchant> enchant) {
+        List<EnchantmentLevel> enchantments) {
 
     public static OfferFingerprint of(PredictedOffer offer) {
-        return new OfferFingerprint(offer.resultItem(), offer.costA(), offer.costB(), offer.storedEnchantment());
+        return new OfferFingerprint(offer.resultItem(), offer.costA(), offer.costB(), offer.enchantments());
     }
 
     /** Stable multi-offer identity of one round, order-insensitive. */

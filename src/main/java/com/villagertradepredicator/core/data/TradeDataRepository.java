@@ -19,36 +19,65 @@ import net.minecraft.resources.Identifier;
  * hardcoded professions or trades, so datapack-defined professions land here too.
  * Each set carries its compatibility verdict; incompatible sets are retained with the
  * reasons but never simulated.
+ *
+ * <p>{@link #loadFromClasspath(String)} additionally layers a built-in datapack
+ * (e.g. {@code trade_rebalance}) over the base data with vanilla pack-stack semantics;
+ * the client layer selects the variant matching the world's enabled feature flags.</p>
  */
 public final class TradeDataRepository {
+    private static final String BASE_ROOT = "data/";
+    private static final String OVERLAY_TEMPLATE = "data/minecraft/datapacks/%s/data/";
     private static final Pattern TRADE_SET_PATH =
-            Pattern.compile("data/([^/]+)/trade_set/([^/]+)/level_(\\d+)\\.json");
+            Pattern.compile("([^/]+)/trade_set/([^/]+)/level_(\\d+)\\.json");
 
     private final Map<TradeSetKey, LoadedTradeSet> sets = new LinkedHashMap<>();
+    private final String mode;
 
-    private TradeDataRepository() {}
+    private TradeDataRepository(String mode) {
+        this.mode = mode;
+    }
 
     public static TradeDataRepository loadFromClasspath() {
-        TradeDataRepository repo = new TradeDataRepository();
-        for (String path : ClasspathTradeData.listJsonFiles("data")) {
-            Matcher m = TRADE_SET_PATH.matcher(path);
+        return loadFromClasspath(null);
+    }
+
+    /** @param builtInPack built-in datapack name to layer on top, or {@code null} for base data */
+    public static TradeDataRepository loadFromClasspath(String builtInPack) {
+        String overlayRoot = builtInPack == null
+                ? null
+                : String.format(Locale.ROOT, OVERLAY_TEMPLATE, builtInPack);
+        TradeDataRepository repo = new TradeDataRepository(builtInPack == null ? "base" : builtInPack);
+        DataAccess access = new DataAccess(builtInPack == null ? List.of() : List.of(builtInPack));
+        TradeDataParser parser = new TradeDataParser(access);
+
+        Map<TradeSetKey, String> paths = new LinkedHashMap<>();
+        collectTradeSetPaths(BASE_ROOT, paths);
+        if (overlayRoot != null) {
+            collectTradeSetPaths(overlayRoot, paths); // overlay overrides base on the same key
+        }
+        paths.forEach((key, path) -> repo.sets.put(key, loadSet(key, path, parser)));
+        return repo;
+    }
+
+    private static void collectTradeSetPaths(String root, Map<TradeSetKey, String> paths) {
+        for (String path : ClasspathTradeData.listJsonFiles(root)) {
+            String relative = path.substring(root.length());
+            Matcher m = TRADE_SET_PATH.matcher(relative);
             if (!m.matches()) {
                 continue;
             }
             Identifier profession = Identifier.fromNamespaceAndPath(m.group(1), m.group(2));
             int level = Integer.parseInt(m.group(3));
-            TradeSetKey key = new TradeSetKey(profession, level);
-            repo.sets.put(key, loadSet(key, path));
+            paths.put(new TradeSetKey(profession, level), path);
         }
-        return repo;
     }
 
-    private static LoadedTradeSet loadSet(TradeSetKey key, String path) {
+    private static LoadedTradeSet loadSet(TradeSetKey key, String path, TradeDataParser parser) {
         Identifier setId = Identifier.fromNamespaceAndPath(key.profession().getNamespace(),
                 "trade_set/" + key.profession().getPath() + "/level_" + key.level());
         return ClasspathTradeData.readJson(path).map(json -> {
             try {
-                TradeSetDef def = TradeDataParser.parseTradeSet(setId, json);
+                TradeSetDef def = parser.parseTradeSet(setId, json);
                 return LoadedTradeSet.ok(key, def);
             } catch (TradeDataParser.UnsupportedTradeException e) {
                 return LoadedTradeSet.incompatible(key, Optional.empty(), List.of(e.getMessage()));
@@ -84,9 +113,15 @@ public final class TradeDataRepository {
         return out;
     }
 
+    /** Which data mode this repository was loaded in ({@code "base"} or a pack name). */
+    public String mode() {
+        return mode;
+    }
+
     @Override
     public String toString() {
         long compatible = sets.values().stream().filter(LoadedTradeSet::isCompatible).count();
-        return String.format(Locale.ROOT, "TradeDataRepository[%d sets, %d compatible]", sets.size(), compatible);
+        return String.format(Locale.ROOT, "TradeDataRepository[%s, %d sets, %d compatible]",
+                mode, sets.size(), compatible);
     }
 }

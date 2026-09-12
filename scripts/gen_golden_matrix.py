@@ -36,7 +36,7 @@ LEVEL_RE = re.compile(r"^  Level (\d+):$")
 LINE_RE = re.compile(r"^    (.+?)\s*$")
 BOOK_RE = re.compile(r"^(\w+) (\d+) \((\d+) emeralds\)(?: \[treasure\])?$")
 
-JAR = os.path.join(TOOL_DIR, "refs", "minecraft-merged-b5df1ea0fb-26.1.jar")
+JAR = os.path.join(TOOL_DIR, "refs", "26.1.2.jar")
 
 
 def build_pools():

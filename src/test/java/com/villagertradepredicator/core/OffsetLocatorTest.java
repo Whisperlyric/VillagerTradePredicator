@@ -11,7 +11,6 @@ import com.villagertradepredicator.core.rng.SequenceConfig;
 import com.villagertradepredicator.core.rng.TradeSequences;
 import com.villagertradepredicator.core.sim.SimContext;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

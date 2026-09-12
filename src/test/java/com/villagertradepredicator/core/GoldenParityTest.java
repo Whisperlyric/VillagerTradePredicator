@@ -10,10 +10,10 @@ import com.villagertradepredicator.core.model.PredictedOffer;
 import com.villagertradepredicator.core.model.TradeSetDef;
 import com.villagertradepredicator.core.rng.SequenceConfig;
 import com.villagertradepredicator.core.rng.TradeSequences;
+import com.villagertradepredicator.core.rng.XoroshiroStream;
 import com.villagertradepredicator.core.sim.SimContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.levelgen.RandomSupport;
-import net.minecraft.world.level.levelgen.XoroshiroRandomSource;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -84,7 +84,7 @@ class GoldenParityTest {
         assertEquals(0xDDF7BE1789D3DABEL, RandomSupport.mixStafford13(0x17234611BEB0AD3EL));
         assertEquals(0x48F9718A062D2DDAL, RandomSupport.mixStafford13(0xE99E02949D7D25D8L));
 
-        XoroshiroRandomSource derived = TradeSequences.create(SEED1, SequenceConfig.DEFAULT,
+        XoroshiroStream derived = TradeSequences.create(SEED1, SequenceConfig.DEFAULT,
                 TradeSequences.sequenceId(LIBRARIAN, 1));
         int[] expected = {1, 2, 1, 2, 2, 1, 2, 1};
         for (int i = 0; i < expected.length; i++) {
