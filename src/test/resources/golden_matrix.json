@@ -1,0 +1,4296 @@
+{
+ "seeds": [
+  1234567890123456789,
+  -4592854367812309587,
+  812345678901234567
+ ],
+ "pools": {
+  "armorer/1": [
+   "minecraft:smith/1/coal_emerald",
+   "minecraft:armorer/1/emerald_iron_leggings",
+   "minecraft:armorer/1/emerald_iron_boots",
+   "minecraft:armorer/1/emerald_iron_helmet",
+   "minecraft:armorer/1/emerald_iron_chestplate"
+  ],
+  "armorer/2": [
+   "minecraft:smith/2/iron_ingot_emerald",
+   "minecraft:smith/2/emerald_bell",
+   "minecraft:armorer/2/emerald_chainmail_boots",
+   "minecraft:armorer/2/emerald_chainmail_leggings"
+  ],
+  "armorer/3": [
+   "minecraft:armorer/3/lava_bucket_emerald",
+   "minecraft:armorer/3/emerald_chainmail_helmet",
+   "minecraft:armorer/3/emerald_chainmail_chestplate",
+   "minecraft:armorer/3/emerald_shield",
+   "minecraft:armorer/3/diamond_emerald"
+  ],
+  "armorer/4": [
+   "minecraft:armorer/4/emerald_enchanted_diamond_leggings",
+   "minecraft:armorer/4/emerald_enchanted_diamond_boots"
+  ],
+  "armorer/5": [
+   "minecraft:armorer/5/emerald_enchanted_diamond_helmet",
+   "minecraft:armorer/5/emerald_enchanted_diamond_chestplate"
+  ],
+  "butcher/1": [
+   "minecraft:butcher/1/chicken_emerald",
+   "minecraft:butcher/1/porkchop_emerald",
+   "minecraft:butcher/1/rabbit_emerald",
+   "minecraft:butcher/1/emerald_rabbit_stew"
+  ],
+  "butcher/2": [
+   "minecraft:butcher/2/coal_emerald",
+   "minecraft:butcher/2/emerald_cooked_porkchop",
+   "minecraft:butcher/2/emerald_cooked_chicken"
+  ],
+  "butcher/3": [
+   "minecraft:butcher/3/mutton_emerald",
+   "minecraft:butcher/3/beef_emerald"
+  ],
+  "butcher/4": [
+   "minecraft:butcher/4/dried_kelp_block_emerald"
+  ],
+  "butcher/5": [
+   "minecraft:butcher/5/sweet_berries_emerald"
+  ],
+  "cartographer/1": [
+   "minecraft:cartographer/1/paper_emerald",
+   "minecraft:cartographer/1/emerald_map"
+  ],
+  "cartographer/2": [
+   "minecraft:cartographer/2/glass_pane_emerald",
+   "minecraft:cartographer/2/emerald_and_compass_village_taiga_map",
+   "minecraft:cartographer/2/emerald_and_compass_explorer_swamp_map",
+   "minecraft:cartographer/2/emerald_and_compass_village_snowy_map",
+   "minecraft:cartographer/2/emerald_and_compass_village_savanna_map",
+   "minecraft:cartographer/2/emerald_and_compass_village_plains_map",
+   "minecraft:cartographer/2/emerald_and_compass_explorer_jungle_map",
+   "minecraft:cartographer/2/emerald_and_compass_village_desert_map"
+  ],
+  "cartographer/3": [
+   "minecraft:cartographer/3/compass_emerald",
+   "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map",
+   "minecraft:cartographer/3/emerald_and_compass_trial_chamber_map"
+  ],
+  "cartographer/4": [
+   "minecraft:cartographer/4/emerald_item_frame",
+   "minecraft:cartographer/4/emerald_white_banner",
+   "minecraft:cartographer/4/emerald_orange_banner",
+   "minecraft:cartographer/4/emerald_magenta_banner",
+   "minecraft:cartographer/4/emerald_blue_banner",
+   "minecraft:cartographer/4/emerald_light_blue_banner",
+   "minecraft:cartographer/4/emerald_yellow_banner",
+   "minecraft:cartographer/4/emerald_lime_banner",
+   "minecraft:cartographer/4/emerald_pink_banner",
+   "minecraft:cartographer/4/emerald_gray_banner",
+   "minecraft:cartographer/4/emerald_cyan_banner",
+   "minecraft:cartographer/4/emerald_purple_banner",
+   "minecraft:cartographer/4/emerald_brown_banner",
+   "minecraft:cartographer/4/emerald_green_banner",
+   "minecraft:cartographer/4/emerald_red_banner",
+   "minecraft:cartographer/4/emerald_black_banner"
+  ],
+  "cartographer/5": [
+   "minecraft:cartographer/5/emerald_globe_banner_pattern",
+   "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map"
+  ],
+  "cleric/1": [
+   "minecraft:cleric/1/rotten_flesh_emerald",
+   "minecraft:cleric/1/emerald_redstone"
+  ],
+  "cleric/2": [
+   "minecraft:cleric/2/gold_ingot_emerald",
+   "minecraft:cleric/2/emerald_lapis_lazuli"
+  ],
+  "cleric/3": [
+   "minecraft:cleric/3/rabbit_foot_emerald",
+   "minecraft:cleric/3/emerald_glowstone"
+  ],
+  "cleric/4": [
+   "minecraft:cleric/4/turtle_scute_emerald",
+   "minecraft:cleric/4/glass_bottle_emerald",
+   "minecraft:cleric/4/emerald_ender_pearl"
+  ],
+  "cleric/5": [
+   "minecraft:cleric/5/nether_wart_emerald",
+   "minecraft:cleric/5/emerald_experience_bottle"
+  ],
+  "farmer/1": [
+   "minecraft:farmer/1/wheat_emerald",
+   "minecraft:farmer/1/potato_emerald",
+   "minecraft:farmer/1/carrot_emerald",
+   "minecraft:farmer/1/beetroot_emerald",
+   "minecraft:farmer/1/emerald_bread"
+  ],
+  "farmer/2": [
+   "minecraft:farmer/2/pumpkin_emerald",
+   "minecraft:farmer/2/emerald_pumpkin_pie",
+   "minecraft:farmer/2/emerald_apple"
+  ],
+  "farmer/3": [
+   "minecraft:farmer/3/emerald_cookie",
+   "minecraft:farmer/3/melon_emerald"
+  ],
+  "farmer/4": [
+   "minecraft:farmer/4/emerald_cake",
+   "minecraft:farmer/4/emerald_suspicious_stew"
+  ],
+  "farmer/5": [
+   "minecraft:farmer/5/emerald_golden_carrot",
+   "minecraft:farmer/5/emerald_glistening_melon_slice"
+  ],
+  "fisherman/1": [
+   "minecraft:fisherman/1/string_emerald",
+   "minecraft:fisherman/1/coal_emerald",
+   "minecraft:fisherman/1/raw_cod_and_emerald_cooked_cod",
+   "minecraft:fisherman/1/emerald_cod_bucket"
+  ],
+  "fisherman/2": [
+   "minecraft:fisherman/2/cod_emerald",
+   "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon",
+   "minecraft:fisherman/2/emerald_campfire"
+  ],
+  "fisherman/3": [
+   "minecraft:fisherman/3/salmon_emerald",
+   "minecraft:fisherman/3/emerald_enchanted_fishing_rod"
+  ],
+  "fisherman/4": [
+   "minecraft:fisherman/4/tropical_fish_emerald"
+  ],
+  "fisherman/5": [
+   "minecraft:fisherman/5/pufferfish_emerald",
+   "minecraft:fisherman/5/oak_boat_emerald",
+   "minecraft:fisherman/5/spruce_boat_emerald",
+   "minecraft:fisherman/5/jungle_boat_emerald",
+   "minecraft:fisherman/5/acacia_boat_emerald",
+   "minecraft:fisherman/5/dark_oak_boat_emerald"
+  ],
+  "fletcher/1": [
+   "minecraft:fletcher/1/stick_emerald",
+   "minecraft:fletcher/1/emerald_arrow",
+   "minecraft:fletcher/1/gravel_and_emerald_flint"
+  ],
+  "fletcher/2": [
+   "minecraft:fletcher/2/flint_emerald",
+   "minecraft:fletcher/2/emerald_bow"
+  ],
+  "fletcher/3": [
+   "minecraft:fletcher/3/string_emerald",
+   "minecraft:fletcher/3/emerald_crossbow"
+  ],
+  "fletcher/4": [
+   "minecraft:fletcher/4/feather_emerald",
+   "minecraft:fletcher/4/emerald_enchanted_bow"
+  ],
+  "fletcher/5": [
+   "minecraft:fletcher/5/tripwire_hook_emerald",
+   "minecraft:fletcher/5/emerald_enchanted_crossbow",
+   "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow"
+  ],
+  "leatherworker/1": [
+   "minecraft:leatherworker/1/leather_emerald",
+   "minecraft:leatherworker/1/emerald_dyed_leather_leggings",
+   "minecraft:leatherworker/1/emerald_dyed_leather_chestplate"
+  ],
+  "leatherworker/2": [
+   "minecraft:leatherworker/2/flint_emerald",
+   "minecraft:leatherworker/2/emerald_dyed_leather_helmet",
+   "minecraft:leatherworker/2/emerald_dyed_leather_boots"
+  ],
+  "leatherworker/3": [
+   "minecraft:leatherworker/3/rabbit_hide_emerald",
+   "minecraft:leatherworker/3/emerald_dyed_leather_chestplate"
+  ],
+  "leatherworker/4": [
+   "minecraft:leatherworker/4/turtle_scute_emerald",
+   "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor"
+  ],
+  "leatherworker/5": [
+   "minecraft:leatherworker/5/emerald_saddle",
+   "minecraft:leatherworker/5/emerald_dyed_leather_helmet"
+  ],
+  "librarian/1": [
+   "minecraft:librarian/1/paper_emerald",
+   "minecraft:librarian/1/emerald_and_book_enchanted_book",
+   "minecraft:librarian/1/emerald_bookshelf"
+  ],
+  "librarian/2": [
+   "minecraft:librarian/2/book_emerald",
+   "minecraft:librarian/2/emerald_and_book_enchanted_book",
+   "minecraft:librarian/2/emerald_lantern"
+  ],
+  "librarian/3": [
+   "minecraft:librarian/3/ink_sac_emerald",
+   "minecraft:librarian/3/emerald_and_book_enchanted_book",
+   "minecraft:librarian/3/emerald_glass"
+  ],
+  "librarian/4": [
+   "minecraft:librarian/4/writable_book_emerald",
+   "minecraft:librarian/4/emerald_book_and_enchanted_book",
+   "minecraft:librarian/4/emerald_clock",
+   "minecraft:librarian/4/emerald_compass"
+  ],
+  "librarian/5": [
+   "minecraft:librarian/5/emerald_yellow_candle",
+   "minecraft:librarian/5/emerald_red_candle"
+  ],
+  "mason/1": [
+   "minecraft:mason/1/clay_ball_emerald",
+   "minecraft:mason/1/emerald_brick"
+  ],
+  "mason/2": [
+   "minecraft:mason/2/stone_emerald",
+   "minecraft:mason/2/emerald_chiseled_stone_bricks"
+  ],
+  "mason/3": [
+   "minecraft:mason/3/granite_emerald",
+   "minecraft:mason/3/andesite_emerald",
+   "minecraft:mason/3/diorite_emerald",
+   "minecraft:mason/3/emerald_dripstone_block",
+   "minecraft:mason/3/emerald_polished_andesite",
+   "minecraft:mason/3/emerald_polished_diorite",
+   "minecraft:mason/3/emerald_polished_granite"
+  ],
+  "mason/4": [
+   "minecraft:mason/4/quartz_emerald",
+   "minecraft:mason/4/emerald_orange_terracotta",
+   "minecraft:mason/4/emerald_white_terracotta",
+   "minecraft:mason/4/emerald_blue_terracotta",
+   "minecraft:mason/4/emerald_light_blue_terracotta",
+   "minecraft:mason/4/emerald_gray_terracotta",
+   "minecraft:mason/4/emerald_light_gray_terracotta",
+   "minecraft:mason/4/emerald_black_terracotta",
+   "minecraft:mason/4/emerald_red_terracotta",
+   "minecraft:mason/4/emerald_pink_terracotta",
+   "minecraft:mason/4/emerald_magenta_terracotta",
+   "minecraft:mason/4/emerald_lime_terracotta",
+   "minecraft:mason/4/emerald_green_terracotta",
+   "minecraft:mason/4/emerald_cyan_terracotta",
+   "minecraft:mason/4/emerald_purple_terracotta",
+   "minecraft:mason/4/emerald_yellow_terracotta",
+   "minecraft:mason/4/emerald_brown_terracotta",
+   "minecraft:mason/4/emerald_orange_glazed_terracotta",
+   "minecraft:mason/4/emerald_white_glazed_terracotta",
+   "minecraft:mason/4/emerald_blue_glazed_terracotta",
+   "minecraft:mason/4/emerald_light_blue_glazed_terracotta",
+   "minecraft:mason/4/emerald_gray_glazed_terracotta",
+   "minecraft:mason/4/emerald_light_gray_glazed_terracotta",
+   "minecraft:mason/4/emerald_black_glazed_terracotta",
+   "minecraft:mason/4/emerald_red_glazed_terracotta",
+   "minecraft:mason/4/emerald_pink_glazed_terracotta",
+   "minecraft:mason/4/emerald_magenta_glazed_terracotta",
+   "minecraft:mason/4/emerald_lime_glazed_terracotta",
+   "minecraft:mason/4/emerald_green_glazed_terracotta",
+   "minecraft:mason/4/emerald_cyan_glazed_terracotta",
+   "minecraft:mason/4/emerald_purple_glazed_terracotta",
+   "minecraft:mason/4/emerald_yellow_glazed_terracotta",
+   "minecraft:mason/4/emerald_brown_glazed_terracotta"
+  ],
+  "mason/5": [
+   "minecraft:mason/5/emerald_quartz_pillar",
+   "minecraft:mason/5/emerald_quartz_block"
+  ],
+  "shepherd/1": [
+   "minecraft:shepherd/1/white_wool_emerald",
+   "minecraft:shepherd/1/brown_wool_emerald",
+   "minecraft:shepherd/1/gray_wool_emerald",
+   "minecraft:shepherd/1/black_wool_emerald",
+   "minecraft:shepherd/1/emerald_shears"
+  ],
+  "shepherd/2": [
+   "minecraft:shepherd/2/white_dye_emerald",
+   "minecraft:shepherd/2/gray_dye_emerald",
+   "minecraft:shepherd/2/black_dye_emerald",
+   "minecraft:shepherd/2/light_blue_dye_emerald",
+   "minecraft:shepherd/2/lime_dye_emerald",
+   "minecraft:shepherd/2/emerald_white_wool",
+   "minecraft:shepherd/2/emerald_orange_wool",
+   "minecraft:shepherd/2/emerald_magenta_wool",
+   "minecraft:shepherd/2/emerald_blue_wool",
+   "minecraft:shepherd/2/emerald_light_blue_wool",
+   "minecraft:shepherd/2/emerald_yellow_wool",
+   "minecraft:shepherd/2/emerald_lime_wool",
+   "minecraft:shepherd/2/emerald_pink_wool",
+   "minecraft:shepherd/2/emerald_gray_wool",
+   "minecraft:shepherd/2/emerald_light_gray_wool",
+   "minecraft:shepherd/2/emerald_cyan_wool",
+   "minecraft:shepherd/2/emerald_purple_wool",
+   "minecraft:shepherd/2/emerald_brown_wool",
+   "minecraft:shepherd/2/emerald_green_wool",
+   "minecraft:shepherd/2/emerald_red_wool",
+   "minecraft:shepherd/2/emerald_black_wool",
+   "minecraft:shepherd/2/emerald_white_carpet",
+   "minecraft:shepherd/2/emerald_orange_carpet",
+   "minecraft:shepherd/2/emerald_magenta_carpet",
+   "minecraft:shepherd/2/emerald_blue_carpet",
+   "minecraft:shepherd/2/emerald_light_blue_carpet",
+   "minecraft:shepherd/2/emerald_yellow_carpet",
+   "minecraft:shepherd/2/emerald_lime_carpet",
+   "minecraft:shepherd/2/emerald_pink_carpet",
+   "minecraft:shepherd/2/emerald_gray_carpet",
+   "minecraft:shepherd/2/emerald_light_gray_carpet",
+   "minecraft:shepherd/2/emerald_cyan_carpet",
+   "minecraft:shepherd/2/emerald_purple_carpet",
+   "minecraft:shepherd/2/emerald_brown_carpet",
+   "minecraft:shepherd/2/emerald_green_carpet",
+   "minecraft:shepherd/2/emerald_red_carpet",
+   "minecraft:shepherd/2/emerald_black_carpet"
+  ],
+  "shepherd/3": [
+   "minecraft:shepherd/3/yellow_dye_emerald",
+   "minecraft:shepherd/3/light_gray_dye_emerald",
+   "minecraft:shepherd/3/orange_dye_emerald",
+   "minecraft:shepherd/3/red_dye_emerald",
+   "minecraft:shepherd/3/pink_dye_emerald",
+   "minecraft:shepherd/3/emerald_white_bed",
+   "minecraft:shepherd/3/emerald_orange_bed",
+   "minecraft:shepherd/3/emerald_magenta_bed",
+   "minecraft:shepherd/3/emerald_blue_bed",
+   "minecraft:shepherd/3/emerald_light_blue_bed",
+   "minecraft:shepherd/3/emerald_yellow_bed",
+   "minecraft:shepherd/3/emerald_lime_bed",
+   "minecraft:shepherd/3/emerald_pink_bed",
+   "minecraft:shepherd/3/emerald_gray_bed",
+   "minecraft:shepherd/3/emerald_light_gray_bed",
+   "minecraft:shepherd/3/emerald_cyan_bed",
+   "minecraft:shepherd/3/emerald_purple_bed",
+   "minecraft:shepherd/3/emerald_brown_bed",
+   "minecraft:shepherd/3/emerald_green_bed",
+   "minecraft:shepherd/3/emerald_red_bed",
+   "minecraft:shepherd/3/emerald_black_bed"
+  ],
+  "shepherd/4": [
+   "minecraft:shepherd/4/brown_dye_emerald",
+   "minecraft:shepherd/4/purple_dye_emerald",
+   "minecraft:shepherd/4/blue_dye_emerald",
+   "minecraft:shepherd/4/green_dye_emerald",
+   "minecraft:shepherd/4/magenta_dye_emerald",
+   "minecraft:shepherd/4/cyan_dye_emerald",
+   "minecraft:shepherd/4/emerald_white_banner",
+   "minecraft:shepherd/4/emerald_orange_banner",
+   "minecraft:shepherd/4/emerald_magenta_banner",
+   "minecraft:shepherd/4/emerald_blue_banner",
+   "minecraft:shepherd/4/emerald_light_blue_banner",
+   "minecraft:shepherd/4/emerald_yellow_banner",
+   "minecraft:shepherd/4/emerald_lime_banner",
+   "minecraft:shepherd/4/emerald_pink_banner",
+   "minecraft:shepherd/4/emerald_gray_banner",
+   "minecraft:shepherd/4/emerald_light_gray_banner",
+   "minecraft:shepherd/4/emerald_cyan_banner",
+   "minecraft:shepherd/4/emerald_purple_banner",
+   "minecraft:shepherd/4/emerald_brown_banner",
+   "minecraft:shepherd/4/emerald_green_banner",
+   "minecraft:shepherd/4/emerald_red_banner",
+   "minecraft:shepherd/4/emerald_black_banner"
+  ],
+  "shepherd/5": [
+   "minecraft:shepherd/5/emerald_painting"
+  ],
+  "toolsmith/1": [
+   "minecraft:smith/1/coal_emerald",
+   "minecraft:toolsmith/1/emerald_stone_axe",
+   "minecraft:toolsmith/1/emerald_stone_shovel",
+   "minecraft:toolsmith/1/emerald_stone_pickaxe",
+   "minecraft:toolsmith/1/emerald_stone_hoe"
+  ],
+  "toolsmith/2": [
+   "minecraft:smith/2/iron_ingot_emerald",
+   "minecraft:smith/2/emerald_bell"
+  ],
+  "toolsmith/3": [
+   "minecraft:toolsmith/3/flint_emerald",
+   "minecraft:toolsmith/3/emerald_enchanted_iron_axe",
+   "minecraft:toolsmith/3/emerald_enchanted_iron_shovel",
+   "minecraft:toolsmith/3/emerald_enchanted_iron_pickaxe",
+   "minecraft:toolsmith/3/emerald_diamond_hoe"
+  ],
+  "toolsmith/4": [
+   "minecraft:toolsmith/4/emerald_enchanted_diamond_axe",
+   "minecraft:toolsmith/4/emerald_enchanted_diamond_shovel",
+   "minecraft:toolsmith/4/diamond_emerald"
+  ],
+  "toolsmith/5": [
+   "minecraft:toolsmith/5/emerald_enchanted_diamond_pickaxe"
+  ],
+  "weaponsmith/1": [
+   "minecraft:smith/1/coal_emerald",
+   "minecraft:weaponsmith/1/emerald_iron_axe",
+   "minecraft:weaponsmith/1/emerald_enchanted_iron_sword"
+  ],
+  "weaponsmith/2": [
+   "minecraft:smith/2/iron_ingot_emerald",
+   "minecraft:smith/2/emerald_bell"
+  ],
+  "weaponsmith/3": [
+   "minecraft:weaponsmith/3/flint_emerald"
+  ],
+  "weaponsmith/4": [
+   "minecraft:weaponsmith/4/emerald_enchanted_diamond_axe",
+   "minecraft:weaponsmith/4/diamond_emerald"
+  ],
+  "weaponsmith/5": [
+   "minecraft:weaponsmith/5/emerald_enchanted_diamond_sword"
+  ]
+ },
+ "cells": [
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/1/emerald_iron_helmet",
+    "minecraft:armorer/1/emerald_iron_chestplate"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/2/emerald_chainmail_leggings",
+    "minecraft:armorer/2/emerald_chainmail_boots"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/3/emerald_chainmail_helmet",
+    "minecraft:armorer/3/lava_bucket_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_boots (+13 emeralds)",
+    "RAW:enchanted diamond_leggings (+31 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_chestplate (+22 emeralds)",
+    "RAW:enchanted diamond_helmet (+19 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/1/emerald_iron_chestplate",
+    "minecraft:armorer/1/emerald_iron_leggings"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/2/emerald_chainmail_leggings",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/3/emerald_chainmail_chestplate",
+    "minecraft:armorer/3/emerald_chainmail_helmet"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_boots (+21 emeralds)",
+    "RAW:enchanted diamond_leggings (+20 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_chestplate (+21 emeralds)",
+    "RAW:enchanted diamond_helmet (+24 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/1/chicken_emerald",
+    "minecraft:butcher/1/rabbit_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/2/coal_emerald",
+    "minecraft:butcher/2/emerald_cooked_porkchop"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/3/beef_emerald",
+    "minecraft:butcher/3/mutton_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/1/rabbit_emerald",
+    "minecraft:butcher/1/porkchop_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/2/emerald_cooked_chicken",
+    "minecraft:butcher/2/coal_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/3/mutton_emerald",
+    "minecraft:butcher/3/beef_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/1/emerald_map",
+    "minecraft:cartographer/1/paper_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/2/glass_pane_emerald",
+    "minecraft:cartographer/2/emerald_and_compass_village_savanna_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/3/compass_emerald",
+    "minecraft:cartographer/3/emerald_and_compass_trial_chamber_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/4/emerald_brown_banner",
+    "minecraft:cartographer/4/emerald_pink_banner"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/5/emerald_globe_banner_pattern",
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/1/emerald_map",
+    "minecraft:cartographer/1/paper_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/2/emerald_and_compass_village_savanna_map",
+    "minecraft:cartographer/2/emerald_and_compass_village_desert_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/3/compass_emerald",
+    "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/4/emerald_gray_banner",
+    "minecraft:cartographer/4/emerald_green_banner"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/5/emerald_globe_banner_pattern",
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/1/rotten_flesh_emerald",
+    "minecraft:cleric/1/emerald_redstone"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/2/emerald_lapis_lazuli",
+    "minecraft:cleric/2/gold_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/3/emerald_glowstone",
+    "minecraft:cleric/3/rabbit_foot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/4/turtle_scute_emerald",
+    "minecraft:cleric/4/glass_bottle_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/5/emerald_experience_bottle",
+    "minecraft:cleric/5/nether_wart_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/1/rotten_flesh_emerald",
+    "minecraft:cleric/1/emerald_redstone"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/2/emerald_lapis_lazuli",
+    "minecraft:cleric/2/gold_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/3/rabbit_foot_emerald",
+    "minecraft:cleric/3/emerald_glowstone"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/4/emerald_ender_pearl",
+    "minecraft:cleric/4/glass_bottle_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/5/nether_wart_emerald",
+    "minecraft:cleric/5/emerald_experience_bottle"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/1/wheat_emerald",
+    "minecraft:farmer/1/carrot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_pumpkin_pie"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/3/melon_emerald",
+    "minecraft:farmer/3/emerald_cookie"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/4/emerald_cake",
+    "minecraft:farmer/4/emerald_suspicious_stew"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/1/emerald_bread",
+    "minecraft:farmer/1/carrot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_apple"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/3/emerald_cookie",
+    "minecraft:farmer/3/melon_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/4/emerald_suspicious_stew",
+    "minecraft:farmer/4/emerald_cake"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/1/emerald_cod_bucket",
+    "minecraft:fisherman/1/string_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon",
+    "minecraft:fisherman/2/cod_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/3/salmon_emerald",
+    "RAW:enchanted fishing_rod (+20 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/5/pufferfish_emerald",
+    "minecraft:fisherman/5/oak_boat_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/1/raw_cod_and_emerald_cooked_cod",
+    "minecraft:fisherman/1/string_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/2/emerald_campfire",
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/3/salmon_emerald",
+    "RAW:enchanted fishing_rod (+9 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/5/dark_oak_boat_emerald",
+    "minecraft:fisherman/5/jungle_boat_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/1/emerald_arrow",
+    "minecraft:fletcher/1/stick_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/2/emerald_bow",
+    "minecraft:fletcher/2/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/3/string_emerald",
+    "minecraft:fletcher/3/emerald_crossbow"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted bow (+20 emeralds)",
+    "minecraft:fletcher/4/feather_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted crossbow (+20 emeralds)",
+    "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/1/stick_emerald",
+    "minecraft:fletcher/1/emerald_arrow"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/2/emerald_bow",
+    "minecraft:fletcher/2/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/3/string_emerald",
+    "minecraft:fletcher/3/emerald_crossbow"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/4/feather_emerald",
+    "RAW:enchanted bow (+17 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted crossbow (+17 emeralds)",
+    "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/emerald_dyed_leather_leggings"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/2/emerald_dyed_leather_boots",
+    "minecraft:leatherworker/2/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/3/rabbit_hide_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/4/turtle_scute_emerald",
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_saddle",
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/emerald_dyed_leather_leggings"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/2/flint_emerald",
+    "minecraft:leatherworker/2/emerald_dyed_leather_boots"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/3/rabbit_hide_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor",
+    "minecraft:leatherworker/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_saddle",
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "book:projectile_protection:1:10",
+    "minecraft:librarian/1/paper_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/2/emerald_lantern",
+    "minecraft:librarian/2/book_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "book:protection:2:15",
+    "minecraft:librarian/3/ink_sac_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "book:feather_falling:1:6",
+    "minecraft:librarian/4/emerald_compass"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/5/emerald_yellow_candle",
+    "minecraft:librarian/5/emerald_red_candle"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/1/emerald_bookshelf",
+    "minecraft:librarian/1/paper_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "book:impaling:2:23",
+    "minecraft:librarian/2/emerald_lantern"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/3/emerald_glass",
+    "book:knockback:1:18"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/4/emerald_compass",
+    "book:blast_protection:2:21"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/5/emerald_yellow_candle",
+    "minecraft:librarian/5/emerald_red_candle"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/1/emerald_brick",
+    "minecraft:mason/1/clay_ball_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/3/diorite_emerald",
+    "minecraft:mason/3/emerald_dripstone_block"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/4/emerald_yellow_glazed_terracotta",
+    "minecraft:mason/4/emerald_lime_glazed_terracotta"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_block",
+    "minecraft:mason/5/emerald_quartz_pillar"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/1/emerald_brick",
+    "minecraft:mason/1/clay_ball_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/3/emerald_polished_andesite",
+    "minecraft:mason/3/emerald_polished_diorite"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/4/emerald_light_blue_glazed_terracotta",
+    "minecraft:mason/4/emerald_blue_terracotta"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "mason",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_block",
+    "minecraft:mason/5/emerald_quartz_pillar"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/1/black_wool_emerald",
+    "minecraft:shepherd/1/brown_wool_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/2/emerald_magenta_carpet",
+    "minecraft:shepherd/2/emerald_yellow_wool"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/3/emerald_magenta_bed",
+    "minecraft:shepherd/3/emerald_purple_bed"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/4/emerald_yellow_banner",
+    "minecraft:shepherd/4/emerald_light_gray_banner"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/1/white_wool_emerald",
+    "minecraft:shepherd/1/black_wool_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/2/emerald_light_gray_wool",
+    "minecraft:shepherd/2/emerald_purple_wool"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/3/orange_dye_emerald",
+    "minecraft:shepherd/3/yellow_dye_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/4/emerald_brown_banner",
+    "minecraft:shepherd/4/cyan_dye_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/1/emerald_stone_shovel",
+    "minecraft:toolsmith/1/emerald_stone_hoe"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/3/emerald_diamond_hoe",
+    "RAW:enchanted iron_pickaxe (+10 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/4/diamond_emerald",
+    "RAW:enchanted diamond_axe (+31 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+25 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:toolsmith/1/emerald_stone_axe",
+    "minecraft:toolsmith/1/emerald_stone_hoe"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:smith/2/iron_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:toolsmith/3/emerald_diamond_hoe",
+    "minecraft:toolsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_axe (+18 emeralds)",
+    "minecraft:toolsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+22 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted iron_sword (+14 emeralds)",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_axe (+27 emeralds)",
+    "minecraft:weaponsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_sword (+23 emeralds)"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/1/emerald_iron_axe",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:smith/2/iron_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_axe (+18 emeralds)",
+    "minecraft:weaponsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 1234567890123456789,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_sword (+25 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/1/emerald_iron_helmet",
+    "minecraft:armorer/1/emerald_iron_leggings"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:armorer/2/emerald_chainmail_leggings"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/3/diamond_emerald",
+    "minecraft:armorer/3/emerald_chainmail_helmet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_boots (+17 emeralds)",
+    "RAW:enchanted diamond_leggings (+30 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_helmet (+25 emeralds)",
+    "RAW:enchanted diamond_chestplate (+28 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/1/coal_emerald",
+    "minecraft:armorer/1/emerald_iron_helmet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/2/emerald_chainmail_boots",
+    "minecraft:armorer/2/emerald_chainmail_leggings"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/3/diamond_emerald",
+    "minecraft:armorer/3/emerald_chainmail_helmet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_boots (+27 emeralds)",
+    "RAW:enchanted diamond_leggings (+29 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_chestplate (+25 emeralds)",
+    "RAW:enchanted diamond_helmet (+26 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/1/rabbit_emerald",
+    "minecraft:butcher/1/emerald_rabbit_stew"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/2/coal_emerald",
+    "minecraft:butcher/2/emerald_cooked_porkchop"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/3/mutton_emerald",
+    "minecraft:butcher/3/beef_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/1/porkchop_emerald",
+    "minecraft:butcher/1/rabbit_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/2/emerald_cooked_porkchop",
+    "minecraft:butcher/2/coal_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/3/mutton_emerald",
+    "minecraft:butcher/3/beef_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/1/emerald_map",
+    "minecraft:cartographer/1/paper_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/2/emerald_and_compass_village_savanna_map",
+    "minecraft:cartographer/2/emerald_and_compass_village_snowy_map"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/3/emerald_and_compass_trial_chamber_map",
+    "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/4/emerald_lime_banner",
+    "minecraft:cartographer/4/emerald_red_banner"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/5/emerald_globe_banner_pattern",
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/1/paper_emerald",
+    "minecraft:cartographer/1/emerald_map"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/2/emerald_and_compass_village_desert_map",
+    "minecraft:cartographer/2/emerald_and_compass_explorer_swamp_map"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map",
+    "minecraft:cartographer/3/compass_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/4/emerald_purple_banner",
+    "minecraft:cartographer/4/emerald_light_blue_banner"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map",
+    "minecraft:cartographer/5/emerald_globe_banner_pattern"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/1/emerald_redstone",
+    "minecraft:cleric/1/rotten_flesh_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/2/gold_ingot_emerald",
+    "minecraft:cleric/2/emerald_lapis_lazuli"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/3/emerald_glowstone",
+    "minecraft:cleric/3/rabbit_foot_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/4/glass_bottle_emerald",
+    "minecraft:cleric/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/5/nether_wart_emerald",
+    "minecraft:cleric/5/emerald_experience_bottle"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/1/emerald_redstone",
+    "minecraft:cleric/1/rotten_flesh_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/2/gold_ingot_emerald",
+    "minecraft:cleric/2/emerald_lapis_lazuli"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/3/emerald_glowstone",
+    "minecraft:cleric/3/rabbit_foot_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/4/glass_bottle_emerald",
+    "minecraft:cleric/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/5/nether_wart_emerald",
+    "minecraft:cleric/5/emerald_experience_bottle"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/1/potato_emerald",
+    "minecraft:farmer/1/wheat_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_pumpkin_pie"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/3/melon_emerald",
+    "minecraft:farmer/3/emerald_cookie"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/4/emerald_cake",
+    "minecraft:farmer/4/emerald_suspicious_stew"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/1/potato_emerald",
+    "minecraft:farmer/1/emerald_bread"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_pumpkin_pie"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/3/emerald_cookie",
+    "minecraft:farmer/3/melon_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/4/emerald_suspicious_stew",
+    "minecraft:farmer/4/emerald_cake"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/1/string_emerald",
+    "minecraft:fisherman/1/emerald_cod_bucket"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/2/emerald_campfire",
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted fishing_rod (+16 emeralds)",
+    "minecraft:fisherman/3/salmon_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/5/oak_boat_emerald",
+    "minecraft:fisherman/5/jungle_boat_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/1/emerald_cod_bucket",
+    "minecraft:fisherman/1/raw_cod_and_emerald_cooked_cod"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/2/emerald_campfire",
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted fishing_rod (+21 emeralds)",
+    "minecraft:fisherman/3/salmon_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/5/dark_oak_boat_emerald",
+    "minecraft:fisherman/5/oak_boat_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/1/stick_emerald",
+    "minecraft:fletcher/1/emerald_arrow"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/2/flint_emerald",
+    "minecraft:fletcher/2/emerald_bow"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/3/emerald_crossbow",
+    "minecraft:fletcher/3/string_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/4/feather_emerald",
+    "RAW:enchanted bow (+7 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted crossbow (+20 emeralds)",
+    "minecraft:fletcher/5/tripwire_hook_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/1/emerald_arrow",
+    "minecraft:fletcher/1/stick_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/2/flint_emerald",
+    "minecraft:fletcher/2/emerald_bow"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/3/string_emerald",
+    "minecraft:fletcher/3/emerald_crossbow"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/4/feather_emerald",
+    "RAW:enchanted bow (+8 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow",
+    "RAW:enchanted crossbow (+15 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/emerald_dyed_leather_leggings"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/2/emerald_dyed_leather_boots",
+    "minecraft:leatherworker/2/flint_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/3/rabbit_hide_emerald",
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor",
+    "minecraft:leatherworker/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet",
+    "minecraft:leatherworker/5/emerald_saddle"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/leather_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/2/emerald_dyed_leather_boots",
+    "minecraft:leatherworker/2/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/3/rabbit_hide_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor",
+    "minecraft:leatherworker/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_saddle",
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/1/paper_emerald",
+    "book:silk_touch:1:16"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/2/book_emerald",
+    "book:piercing:4:27"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/3/ink_sac_emerald",
+    "book:silk_touch:1:13"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/4/emerald_compass",
+    "book:mending:1:18"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/5/emerald_red_candle",
+    "minecraft:librarian/5/emerald_yellow_candle"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/1/emerald_bookshelf",
+    "book:feather_falling:3:45"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/2/book_emerald",
+    "minecraft:librarian/2/emerald_lantern"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/3/ink_sac_emerald",
+    "book:multishot:1:12"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/4/emerald_compass",
+    "minecraft:librarian/4/writable_book_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/5/emerald_red_candle",
+    "minecraft:librarian/5/emerald_yellow_candle"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/1/clay_ball_emerald",
+    "minecraft:mason/1/emerald_brick"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/3/emerald_polished_granite",
+    "minecraft:mason/3/emerald_dripstone_block"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/4/emerald_purple_terracotta",
+    "minecraft:mason/4/emerald_light_blue_glazed_terracotta"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_pillar",
+    "minecraft:mason/5/emerald_quartz_block"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/1/emerald_brick",
+    "minecraft:mason/1/clay_ball_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/3/emerald_polished_diorite",
+    "minecraft:mason/3/andesite_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/4/emerald_green_terracotta",
+    "minecraft:mason/4/emerald_pink_terracotta"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "mason",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_block",
+    "minecraft:mason/5/emerald_quartz_pillar"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/1/white_wool_emerald",
+    "minecraft:shepherd/1/gray_wool_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/2/emerald_white_wool",
+    "minecraft:shepherd/2/emerald_cyan_wool"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/3/emerald_red_bed",
+    "minecraft:shepherd/3/yellow_dye_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/4/emerald_orange_banner",
+    "minecraft:shepherd/4/emerald_light_blue_banner"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/1/gray_wool_emerald",
+    "minecraft:shepherd/1/white_wool_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/2/emerald_red_carpet",
+    "minecraft:shepherd/2/emerald_white_carpet"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/3/emerald_yellow_bed",
+    "minecraft:shepherd/3/emerald_cyan_bed"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/4/emerald_brown_banner",
+    "minecraft:shepherd/4/emerald_orange_banner"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/1/coal_emerald",
+    "minecraft:toolsmith/1/emerald_stone_hoe"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted iron_shovel (+20 emeralds)",
+    "RAW:enchanted iron_axe (+16 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/4/diamond_emerald",
+    "RAW:enchanted diamond_shovel (+12 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+22 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:toolsmith/1/emerald_stone_pickaxe",
+    "minecraft:toolsmith/1/emerald_stone_hoe"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted iron_shovel (+20 emeralds)",
+    "RAW:enchanted iron_pickaxe (+11 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_shovel (+22 emeralds)",
+    "RAW:enchanted diamond_axe (+28 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+31 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted iron_sword (+9 emeralds)",
+    "minecraft:weaponsmith/1/emerald_iron_axe"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:weaponsmith/4/diamond_emerald",
+    "RAW:enchanted diamond_axe (+18 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_sword (+25 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/1/emerald_iron_axe",
+    "RAW:enchanted iron_sword (+21 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/4/diamond_emerald",
+    "RAW:enchanted diamond_axe (+28 emeralds)"
+   ]
+  },
+  {
+   "seed": -4592854367812309587,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_sword (+22 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/1/emerald_iron_helmet",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:armorer/2/emerald_chainmail_boots"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:armorer/3/emerald_chainmail_helmet",
+    "minecraft:armorer/3/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_leggings (+20 emeralds)",
+    "RAW:enchanted diamond_boots (+27 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_helmet (+17 emeralds)",
+    "RAW:enchanted diamond_chestplate (+27 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/1/emerald_iron_chestplate",
+    "minecraft:armorer/1/emerald_iron_leggings"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:armorer/2/emerald_chainmail_boots"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:armorer/3/diamond_emerald",
+    "minecraft:armorer/3/emerald_chainmail_helmet"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_boots (+23 emeralds)",
+    "RAW:enchanted diamond_leggings (+26 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "armorer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_helmet (+16 emeralds)",
+    "RAW:enchanted diamond_chestplate (+33 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/1/porkchop_emerald",
+    "minecraft:butcher/1/chicken_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/2/coal_emerald",
+    "minecraft:butcher/2/emerald_cooked_porkchop"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/3/mutton_emerald",
+    "minecraft:butcher/3/beef_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/1/rabbit_emerald",
+    "minecraft:butcher/1/chicken_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/2/emerald_cooked_chicken",
+    "minecraft:butcher/2/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/3/mutton_emerald",
+    "minecraft:butcher/3/beef_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/4/dried_kelp_block_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "butcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:butcher/5/sweet_berries_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/1/paper_emerald",
+    "minecraft:cartographer/1/emerald_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/2/emerald_and_compass_village_plains_map",
+    "minecraft:cartographer/2/glass_pane_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/3/emerald_and_compass_trial_chamber_map",
+    "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/4/emerald_item_frame",
+    "minecraft:cartographer/4/emerald_brown_banner"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map",
+    "minecraft:cartographer/5/emerald_globe_banner_pattern"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/1/paper_emerald",
+    "minecraft:cartographer/1/emerald_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/2/emerald_and_compass_village_snowy_map",
+    "minecraft:cartographer/2/emerald_and_compass_explorer_jungle_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/3/compass_emerald",
+    "minecraft:cartographer/3/emerald_and_compass_ocean_explorer_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/4/emerald_brown_banner",
+    "minecraft:cartographer/4/emerald_red_banner"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cartographer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cartographer/5/emerald_globe_banner_pattern",
+    "minecraft:cartographer/5/emerald_and_compass_woodland_mansion_map"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/1/emerald_redstone",
+    "minecraft:cleric/1/rotten_flesh_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/2/emerald_lapis_lazuli",
+    "minecraft:cleric/2/gold_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/3/rabbit_foot_emerald",
+    "minecraft:cleric/3/emerald_glowstone"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/4/glass_bottle_emerald",
+    "minecraft:cleric/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:cleric/5/emerald_experience_bottle",
+    "minecraft:cleric/5/nether_wart_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/1/rotten_flesh_emerald",
+    "minecraft:cleric/1/emerald_redstone"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/2/emerald_lapis_lazuli",
+    "minecraft:cleric/2/gold_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/3/rabbit_foot_emerald",
+    "minecraft:cleric/3/emerald_glowstone"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/4/emerald_ender_pearl",
+    "minecraft:cleric/4/glass_bottle_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "cleric",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:cleric/5/nether_wart_emerald",
+    "minecraft:cleric/5/emerald_experience_bottle"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/1/carrot_emerald",
+    "minecraft:farmer/1/wheat_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_pumpkin_pie"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/3/melon_emerald",
+    "minecraft:farmer/3/emerald_cookie"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/4/emerald_cake",
+    "minecraft:farmer/4/emerald_suspicious_stew"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/1/emerald_bread",
+    "minecraft:farmer/1/beetroot_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/2/pumpkin_emerald",
+    "minecraft:farmer/2/emerald_apple"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/3/melon_emerald",
+    "minecraft:farmer/3/emerald_cookie"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/4/emerald_suspicious_stew",
+    "minecraft:farmer/4/emerald_cake"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "farmer",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:farmer/5/emerald_glistening_melon_slice",
+    "minecraft:farmer/5/emerald_golden_carrot"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/1/raw_cod_and_emerald_cooked_cod",
+    "minecraft:fisherman/1/string_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/2/emerald_campfire",
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted fishing_rod (+18 emeralds)",
+    "minecraft:fisherman/3/salmon_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:fisherman/5/oak_boat_emerald",
+    "minecraft:fisherman/5/dark_oak_boat_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/1/coal_emerald",
+    "minecraft:fisherman/1/emerald_cod_bucket"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/2/salmon_and_emerald_cooked_salmon",
+    "minecraft:fisherman/2/cod_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/3/salmon_emerald",
+    "RAW:enchanted fishing_rod (+16 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/4/tropical_fish_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fisherman",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:fisherman/5/acacia_boat_emerald",
+    "minecraft:fisherman/5/spruce_boat_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/1/gravel_and_emerald_flint",
+    "minecraft:fletcher/1/emerald_arrow"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/2/flint_emerald",
+    "minecraft:fletcher/2/emerald_bow"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/3/string_emerald",
+    "minecraft:fletcher/3/emerald_crossbow"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/4/feather_emerald",
+    "RAW:enchanted bow (+13 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow",
+    "RAW:enchanted crossbow (+16 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/1/gravel_and_emerald_flint",
+    "minecraft:fletcher/1/emerald_arrow"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/2/emerald_bow",
+    "minecraft:fletcher/2/flint_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/3/string_emerald",
+    "minecraft:fletcher/3/emerald_crossbow"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/4/feather_emerald",
+    "RAW:enchanted bow (+12 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "fletcher",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:fletcher/5/arrow_and_emerald_tipped_arrow",
+    "minecraft:fletcher/5/tripwire_hook_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/emerald_dyed_leather_leggings"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/2/emerald_dyed_leather_helmet",
+    "minecraft:leatherworker/2/emerald_dyed_leather_boots"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/3/rabbit_hide_emerald",
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor",
+    "minecraft:leatherworker/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_saddle",
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/1/emerald_dyed_leather_chestplate",
+    "minecraft:leatherworker/1/leather_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/2/flint_emerald",
+    "minecraft:leatherworker/2/emerald_dyed_leather_helmet"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/3/rabbit_hide_emerald",
+    "minecraft:leatherworker/3/emerald_dyed_leather_chestplate"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/4/emerald_dyed_leather_horse_armor",
+    "minecraft:leatherworker/4/turtle_scute_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "leatherworker",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:leatherworker/5/emerald_dyed_leather_helmet",
+    "minecraft:leatherworker/5/emerald_saddle"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/1/paper_emerald",
+    "book:bane_of_arthropods:5:42"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/2/emerald_lantern",
+    "book:fire_protection:3:19"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/3/ink_sac_emerald",
+    "book:riptide:2:25"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/4/writable_book_emerald",
+    "minecraft:librarian/4/emerald_clock"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:librarian/5/emerald_red_candle",
+    "minecraft:librarian/5/emerald_yellow_candle"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/1/paper_emerald",
+    "minecraft:librarian/1/emerald_bookshelf"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/2/book_emerald",
+    "book:infinity:1:14"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/3/ink_sac_emerald",
+    "book:blast_protection:4:34"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/4/emerald_clock",
+    "book:quick_charge:1:9"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "librarian",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:librarian/5/emerald_red_candle",
+    "minecraft:librarian/5/emerald_yellow_candle"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/1/emerald_brick",
+    "minecraft:mason/1/clay_ball_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/3/andesite_emerald",
+    "minecraft:mason/3/emerald_polished_andesite"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/4/emerald_green_terracotta",
+    "minecraft:mason/4/emerald_black_terracotta"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_block",
+    "minecraft:mason/5/emerald_quartz_pillar"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/1/clay_ball_emerald",
+    "minecraft:mason/1/emerald_brick"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/2/stone_emerald",
+    "minecraft:mason/2/emerald_chiseled_stone_bricks"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/3/diorite_emerald",
+    "minecraft:mason/3/andesite_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/4/emerald_cyan_terracotta",
+    "minecraft:mason/4/emerald_pink_terracotta"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "mason",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:mason/5/emerald_quartz_pillar",
+    "minecraft:mason/5/emerald_quartz_block"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/1/black_wool_emerald",
+    "minecraft:shepherd/1/gray_wool_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/2/white_dye_emerald",
+    "minecraft:shepherd/2/emerald_magenta_wool"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/3/emerald_white_bed",
+    "minecraft:shepherd/3/light_gray_dye_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/4/emerald_magenta_banner",
+    "minecraft:shepherd/4/emerald_purple_banner"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/1/white_wool_emerald",
+    "minecraft:shepherd/1/emerald_shears"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/2/emerald_brown_wool",
+    "minecraft:shepherd/2/emerald_light_blue_carpet"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/3/emerald_blue_bed",
+    "minecraft:shepherd/3/emerald_orange_bed"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/4/emerald_light_blue_banner",
+    "minecraft:shepherd/4/emerald_black_banner"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "shepherd",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "minecraft:shepherd/5/emerald_painting"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/1/emerald_stone_axe",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:smith/2/iron_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:toolsmith/3/emerald_diamond_hoe",
+    "RAW:enchanted iron_axe (+13 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_shovel (+18 emeralds)",
+    "minecraft:toolsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+28 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:toolsmith/1/emerald_stone_axe",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted iron_shovel (+12 emeralds)",
+    "RAW:enchanted iron_axe (+13 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_shovel (+10 emeralds)",
+    "minecraft:toolsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "toolsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_pickaxe (+21 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted iron_sword (+20 emeralds)",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 0,
+   "expected": [
+    "minecraft:smith/2/iron_ingot_emerald",
+    "minecraft:smith/2/emerald_bell"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 0,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_axe (+26 emeralds)",
+    "minecraft:weaponsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 0,
+   "expected": [
+    "RAW:enchanted diamond_sword (+21 emeralds)"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 1,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/1/emerald_iron_axe",
+    "minecraft:smith/1/coal_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 2,
+   "offset": 1,
+   "expected": [
+    "minecraft:smith/2/emerald_bell",
+    "minecraft:smith/2/iron_ingot_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 3,
+   "offset": 1,
+   "expected": [
+    "minecraft:weaponsmith/3/flint_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 4,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_axe (+20 emeralds)",
+    "minecraft:weaponsmith/4/diamond_emerald"
+   ]
+  },
+  {
+   "seed": 812345678901234567,
+   "profession": "weaponsmith",
+   "level": 5,
+   "offset": 1,
+   "expected": [
+    "RAW:enchanted diamond_sword (+20 emeralds)"
+   ]
+  }
+ ]
+}
