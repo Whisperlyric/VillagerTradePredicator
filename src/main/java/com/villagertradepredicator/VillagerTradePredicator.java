@@ -1,5 +1,6 @@
 package com.villagertradepredicator;
 
+import com.villagertradepredicator.client.VtpCommands;
 import net.fabricmc.api.ClientModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,5 +12,6 @@ public class VillagerTradePredicator implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         LOGGER.info("VillagerTradePredicator initialized");
+        VtpCommands.init();
     }
 }
