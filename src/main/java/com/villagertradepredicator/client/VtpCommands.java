@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.mojang.brigadier.arguments.StringArgumentType;
-import com.villagertradepredicator.client.gui.SeedConfirmScreen;
+import com.villagertradepredicator.client.gui.SeedInputScreen;
 import com.villagertradepredicator.client.observe.ObservationSession;
 import com.villagertradepredicator.client.observe.ObservedOffers;
 import com.villagertradepredicator.client.observe.VillagerTradeReader;
@@ -23,11 +22,12 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ServerData;
+import net.minecraft.client.server.IntegratedServer;
+import net.minecraft.world.level.storage.LevelResource;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.entity.npc.villager.Villager;
-import net.minecraft.world.entity.npc.villager.VillagerProfession;
 
 import static com.mojang.brigadier.arguments.LongArgumentType.longArg;
 import static net.fabricmc.fabric.api.client.command.v2.ClientCommands.argument;
@@ -52,14 +52,29 @@ public final class VtpCommands {
     private VtpCommands() {}
 
     public static void init() {
-        store = OffsetStore.load(FabricLoader.getInstance().getConfigDir()
-                .resolve("villagertradepredicator").resolve("offsets.json"));
         repo = TradeDataRepository.loadFromClasspath();
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
-            ServerData data = client.getCurrentServer();
-            serverId = data != null ? store.serverForIp(data.ip) : "singleplayer";
+            // 存储位置随会话类型切换：单机跟随存档目录（每个世界独立，不互相污染），
+            // 多人固定在 config（按 服务器(ip别名)→世界种子 归属）
+            IntegratedServer integrated = client.getSingleplayerServer();
+            if (integrated != null) {
+                store = OffsetStore.load(integrated.getWorldPath(LevelResource.ROOT)
+                        .resolve("vtp").resolve("offsets.json"));
+                serverId = "singleplayer";
+            } else {
+                store = OffsetStore.load(FabricLoader.getInstance().getConfigDir()
+                        .resolve("villagertradepredicator").resolve("offsets.json"));
+                ServerData data = client.getCurrentServer();
+                serverId = data != null ? store.serverForIp(data.ip) : "unknown";
+            }
+            // 种子按服务器（存档）持久化：重进自动恢复
+            manualSeed = store.seed(serverId).orElse(null);
         });
-        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> store.save());
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
+            if (store != null) {
+                store.save();
+            }
+        });
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(
                 literal("vtp")
                         .then(literal("read").executes(ctx -> readLookedAt() ? 1 : 0))
@@ -68,9 +83,16 @@ public final class VtpCommands {
                             say("§7已清空当前观测序列");
                             return 1;
                         }))
+                        .then(literal("undo").executes(ctx -> {
+                            boolean removed = session.removeLast();
+                            say(removed
+                                    ? "§7已撤销最近一组观测（剩余 " + session.groups() + " 组；缓存不受影响）"
+                                    : "§c没有可撤销的观测");
+                            return removed ? 1 : 0;
+                        }))
                         .then(literal("seed")
                                 .executes(ctx -> {
-                                    SeedConfirmScreen.open(null,
+                                    SeedInputScreen.open(null,
                                             manualSeed == null ? "" : String.valueOf(manualSeed),
                                             VtpCommands::setManualSeed);
                                     return 1;
@@ -84,6 +106,10 @@ public final class VtpCommands {
 
     private static void setManualSeed(long seed) {
         manualSeed = seed;
+        if (!"unknown".equals(serverId)) {
+            store.setSeed(serverId, seed);
+            store.save();
+        }
         say("§a世界种子已设置：" + seed + "（" + worldKey() + "）");
     }
 
@@ -91,12 +117,40 @@ public final class VtpCommands {
         return manualSeed != null ? String.valueOf(manualSeed) : OffsetStore.DEFAULT_WORLD;
     }
 
-    /** Seed resolution per design: manual entry only in multiplayer; null = unlocatable. */
+    /** 种子解析：手动输入优先（含 /seed 截获），其次本服务器持久化的值。 */
     private static Long resolveSeed(Minecraft client) {
         if (manualSeed != null) {
             return manualSeed;
         }
-        return null;
+        return store.seed(serverId).orElse(null);
+    }
+
+    // ---------------------------------------------------------------- /seed 截获
+
+    private static long seedCaptureExpiresAt;
+
+    /** 玩家自己运行了 op 命令 /seed —— 其回复为普通系统消息，合法可读，武装解析窗口。 */
+    public static void onSeedCommandSent() {
+        seedCaptureExpiresAt = System.currentTimeMillis() + 10_000;
+    }
+
+    public static void onSystemMessage(Component message) {
+        if (System.currentTimeMillis() > seedCaptureExpiresAt) {
+            return;
+        }
+        // Runs on the netty IO thread — hop to the render thread for parsing + state writes
+        Minecraft.getInstance().execute(() -> {
+            if (System.currentTimeMillis() > seedCaptureExpiresAt) {
+                return;
+            }
+            java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("\\[(-?\\d+)]")
+                    .matcher(message.getString());
+            if (matcher.find()) {
+                seedCaptureExpiresAt = 0;
+                setManualSeed(Long.parseLong(matcher.group(1)));
+                say("§7（已从 /seed 输出捕获）");
+            }
+        });
     }
 
     private static boolean readLookedAt() {
@@ -122,18 +176,24 @@ public final class VtpCommands {
     }
 
     private static void onObserved(UUID villagerId, Identifier profession, int level, ObservedOffers observed) {
+        var status = session.append(observed, profession);
         if (observed.tradeLocked()) {
-            say("§e⚠ 该村民已有交易经验（xp=" + observed.villagerXp() + "），职业已锁定：无法重掷，观测仅作记录");
+            say("§e[!] 该村民已有交易经验（xp=" + observed.villagerXp() + "），职业已锁定：无法重掷，观测仅作记录");
         }
-        session.append(observed, profession);
-        say("§b第 " + session.groups() + " 组观测 §7(" + profession.getPath() + " L"
+        if (status == ObservationSession.AppendStatus.DUPLICATE_APPENDED) {
+            say("§e[!] 本次读取与上一组内容相同：若是未重掷的重复读取，执行 /vtp undo 撤销；"
+                    + "若重掷后确实相同（低概率池常见），无需处理。");
+        }
+        say("§b" + (status == ObservationSession.AppendStatus.STARTED ? "开始新观测" : "第 "
+                + session.groups() + " 组观测") + " §7(" + profession.getPath() + " L"
                 + observed.villagerLevel() + "):");
         for (OfferFingerprint fp : observed.offers()) {
             String second = fp.costB().map(b -> " + " + b.count() + " " + b.item().getPath()).orElse("");
             String enchants = fp.enchantments().stream()
                     .map(e -> " [" + e.enchantment().getPath() + " " + e.level() + "]")
                     .collect(java.util.stream.Collectors.joining());
-            say("  • " + fp.resultItem().getPath() + second + " ← " + fp.costA() + " 绿宝" + enchants);
+            say("  - " + fp.resultItem().getPath() + second + "  <- " + fp.costA() + " "
+                    + fp.costAItem().getPath() + enchants);
         }
         inferAndReport(profession, level);
     }
@@ -151,7 +211,10 @@ public final class VtpCommands {
         TradeSetDef set = loaded.get().def().orElseThrow();
         Long seed = resolveSeed(Minecraft.getInstance());
         if (seed == null) {
-            say("§7已累计 " + session.groups() + " 组观测；未提供世界种子，无法定位——/vtp seed <种子>");
+            // 需要手动填写：自动弹出实验性设置风格的录入窗口（设计行为）
+            say("§7已累计 " + session.groups() + " 组观测；定位需要世界种子——请手动输入：");
+            SeedInputScreen.open(null, manualSeed == null ? "" : String.valueOf(manualSeed),
+                    VtpCommands::setManualSeed);
             return;
         }
         SimContext ctx = set.trades().stream().anyMatch(t -> t.predicate().isPresent())
@@ -165,14 +228,16 @@ public final class VtpCommands {
         }
         if (candidates.size() == 1) {
             int offset = candidates.get(0);
-            say("§a✔ 唯一定位：offset = " + offset + "（已写入缓存 " + serverId + " / " + worldKey() + "）");
+            say("§a[OK] 唯一定位：offset = " + offset + "（已写入缓存 " + serverId + " / " + worldKey() + "）");
             RoundIterator it = new RoundIterator(set,
                     TradeSequences.create(seed, SequenceConfig.DEFAULT, set.randomSequence()), ctx);
             for (int i = 0; i <= offset; i++) {
                 it.next();
             }
             var snap = it.snapshot();
-            store.putOffset(serverId, worldKey(), seqId, offset, snap.lo(), snap.hi());
+            // store the NEXT round index (= rounds consumed): the saved stream state sits
+            // after the matched round, so resuming must label the first next() as offset+1
+            store.putOffset(serverId, worldKey(), seqId, snap.nextOffset(), snap.lo(), snap.hi());
             store.save();
         } else {
             say("§e候选 " + candidates.size() + " 个（前几项 " + head(candidates)
@@ -185,9 +250,14 @@ public final class VtpCommands {
     }
 
     private static void say(String message) {
-        Minecraft client = Minecraft.getInstance();
-        if (client.player != null) {
-            client.player.sendSystemMessage(Component.literal("§7[VTP]§r " + message));
-        }
+        // Chat/font rendering must happen on the render thread — callers include netty
+        // callbacks (system-chat capture), so always hop. Minecraft.execute is reentrant
+        // on the render thread, so this is safe from both contexts.
+        Minecraft.getInstance().execute(() -> {
+            Minecraft client = Minecraft.getInstance();
+            if (client.player != null) {
+                client.player.sendSystemMessage(Component.literal("§7[VTP]§r " + message));
+            }
+        });
     }
 }

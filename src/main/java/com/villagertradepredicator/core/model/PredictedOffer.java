@@ -18,6 +18,7 @@ public record PredictedOffer(
         Identifier resultItem,
         int resultCount,
         List<EnchantmentLevel> enchantments,
+        Identifier costAItem,
         int costA,
         Optional<SecondCost> costB,
         int maxUses,

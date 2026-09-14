@@ -35,7 +35,21 @@ public final class ObservationSession {
     }
 
     /** Appends one group; starts a fresh session when the villager/profession/level changed. */
-    public void append(ObservedOffers observed, Identifier profession) {
+    public enum AppendStatus {
+        /** First group of a new run (villager/profession/level changed). */
+        STARTED,
+        /** Appended as a new consecutive round. */
+        APPENDED,
+        /**
+         * Appended, but identical to the previous group. Two possible causes: the player
+         * read twice without a re-roll (should be undone), or the re-roll genuinely
+         * produced the same content (common on low-entropy pools — real evidence). The
+         * player decides via undo.
+         */
+        DUPLICATE_APPENDED
+    }
+
+    public AppendStatus append(ObservedOffers observed, Identifier profession) {
         boolean sameRun = villagerId != null && villagerId.equals(observed.villager())
                 && profession.equals(this.profession)
                 && level == observed.villagerLevel();
@@ -44,8 +58,26 @@ public final class ObservationSession {
             this.profession = profession;
             level = observed.villagerLevel();
             groups.clear();
+            groups.add(observed.offers());
+            return AppendStatus.STARTED;
         }
+        boolean duplicate = !groups.isEmpty() && groups.get(groups.size() - 1).equals(observed.offers());
         groups.add(observed.offers());
+        return duplicate ? AppendStatus.DUPLICATE_APPENDED : AppendStatus.APPENDED;
+    }
+
+    /** Removes the most recent group (undo an accidental read); true when one was removed. */
+    public boolean removeLast() {
+        if (groups.isEmpty()) {
+            return false;
+        }
+        groups.remove(groups.size() - 1);
+        if (groups.isEmpty()) {
+            villagerId = null;
+            profession = null;
+            level = 0;
+        }
+        return true;
     }
 
     public List<Integer> infer(TradeSetDef set, SequenceConfig cfg, long seed, SimContext ctx, int scanRange) {

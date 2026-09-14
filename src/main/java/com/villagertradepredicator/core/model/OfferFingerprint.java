@@ -13,12 +13,13 @@ import net.minecraft.resources.Identifier;
  * applies on top and the predictor does not model — observed prices therefore equal the
  * predicted base price only while demand is neutral.
  */
-public record OfferFingerprint(Identifier resultItem, int costA,
+public record OfferFingerprint(Identifier resultItem, Identifier costAItem, int costA,
         Optional<PredictedOffer.SecondCost> costB,
         List<EnchantmentLevel> enchantments) {
 
     public static OfferFingerprint of(PredictedOffer offer) {
-        return new OfferFingerprint(offer.resultItem(), offer.costA(), offer.costB(), offer.enchantments());
+        return new OfferFingerprint(offer.resultItem(), offer.costAItem(), offer.costA(),
+                offer.costB(), offer.enchantments());
     }
 
     /** Stable multi-offer identity of one round, order-insensitive. */

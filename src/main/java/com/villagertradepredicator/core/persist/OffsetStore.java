@@ -14,6 +14,10 @@ import com.google.gson.JsonObject;
  * Persisted sequence positions ("how far has each list stepped"), grouped exactly as the
  * game identifies them: {@code servers/<serverId>/worlds/<worldKey>/sequences/<seqId>}.
  *
+ * <p>File placement follows the session type (the client layer decides): singleplayer
+ * keeps it inside the save directory (one file per world — multiple saves never share a
+ * bucket), multiplayer keeps it under the game config directory.</p>
+ *
  * <p>{@code serverId} is a stable local id ("s1", "s2", ...) that several addresses can
  * alias (one server reachable through different IPs is the same server — see
  * {@link #mapIp}); {@code worldKey} is the world seed when the client receives one
@@ -112,10 +116,11 @@ public final class OffsetStore {
 
     /** Stores the step plus the generator state, so scans can resume exactly here. */
     public void putOffset(String serverId, String worldKey, String seqId,
-            int offset, long stateLo, long stateHi) {
+            int nextOffset, long stateLo, long stateHi) {
         JsonObject world = worldBucket(serverId, worldKey, true);
         JsonObject seq = new JsonObject();
-        seq.addProperty("offset", offset);
+        // nextOffset = 已消耗轮数 = 下一轮将消费的轮号（状态 lo/hi 对应"已消费完这些轮"之后）
+        seq.addProperty("offset", nextOffset);
         seq.addProperty("lo", String.valueOf(stateLo));
         seq.addProperty("hi", String.valueOf(stateHi));
         world.add(seqId, seq);

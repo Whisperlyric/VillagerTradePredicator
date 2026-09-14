@@ -106,7 +106,7 @@ public final class TradeSetSimulator {
 
         return Optional.of(new PredictedOffer(
                 trade.id(), trade.gives().item(), trade.gives().count(), List.copyOf(enchantments),
-                costA, costB, maxUses, xp, reputationDiscount));
+                trade.wants().item(), costA, costB, maxUses, xp, reputationDiscount));
     }
 
     /** {@code TradeCost.toItemCost}: provider draw plus the additional-cost component, clamped to stack size. */

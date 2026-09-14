@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_22",
   "mixins": [],
   "client": [
-    "ConnectionMixin"
+    "ConnectionMixin",
+    "ClientPacketListenerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

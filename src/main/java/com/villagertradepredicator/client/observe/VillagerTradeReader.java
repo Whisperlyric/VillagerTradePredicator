@@ -16,6 +16,7 @@ import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.protocol.game.ServerboundContainerClosePacket;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.item.ItemStack;
@@ -124,7 +125,7 @@ public final class VillagerTradeReader {
         Optional<PredictedOffer.SecondCost> secondCost = costB.isEmpty()
                 ? Optional.empty()
                 : Optional.of(new PredictedOffer.SecondCost(item(costB), costB.getCount()));
-        return new OfferFingerprint(item(result), costA.getCount(), secondCost,
+        return new OfferFingerprint(item(result), item(costA), costA.getCount(), secondCost,
                 enchantmentsOf(result));
     }
 
@@ -132,12 +133,8 @@ public final class VillagerTradeReader {
     private static List<EnchantmentLevel> enchantmentsOf(ItemStack stack) {
         List<EnchantmentLevel> out = new ArrayList<>();
         for (var entry : EnchantmentHelper.getEnchantmentsForCrafting(stack).entrySet()) {
-            Identifier id = entry.getKey().unwrapKey()
-                    .map(key -> key.identifier())
-                    .orElse(null);
-            if (id != null) {
-                out.add(new EnchantmentLevel(id, entry.getIntValue()));
-            }
+            entry.getKey().unwrapKey()
+                    .map(ResourceKey::identifier).ifPresent(id -> out.add(new EnchantmentLevel(id, entry.getIntValue())));
         }
         out.sort(Comparator.comparing(e -> e.enchantment().toString()));
         return List.copyOf(out);
